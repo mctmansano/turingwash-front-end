@@ -19,7 +19,6 @@
                 font-weight: bold;
                 display: flex;
                 justify-content: space-between;
-                
             }
             
             .header__img{
@@ -47,10 +46,63 @@
                 background-color: #8FF2FF;
                 border: none;
                 border-radius: 5px;
-                width: 50px;
+                width: auto;
                 height: 30px;
                 margin-right: 20px;
             }
+
+            main{
+                background-color: #EAF7FF;
+            }
+
+            #page-title{
+                font-size: 30px;
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .my-cars__car{
+                background-color: white;
+                width: 60%;
+                margin-left: 20%;
+                display: flex;
+                justify-content: space-between;
+                height: 100px;
+                border-radius: 8px;
+            }
+
+            #car-name{
+                font-weight: bold;
+            }
+
+            #delete-car{
+                font-size: 16px;
+                background-color: #FF9B9B;
+                border: none;
+                font-weight: bold;
+                border-radius: 5px;
+                width: 120px;
+                height: 30px;
+            }
+            
+            .my-cars__add-button{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #add-car{
+                font-size: 16px;
+                background-color: #8FF2FF;
+                border: none;
+                border-radius: 5px;
+                width: auto;
+                height: 30px;
+            }
+
+
         </style>
     </head>
     <body>
@@ -65,35 +117,23 @@
             </div>
         </header>
         <main>
-            <div>
-                <h1></h1>
+            <div id="page-title">
+                <h1>Meus carros</h1>
             </div>
-            <section>
-                <div>
+            <section class="my-cars">
+                <article class="my-cars__car">
                     <div>
-                        <h1></h1>
-                        <p></p>
+                        <h1 id="car-name">Nissan Kicks</h1>
+                        <p id="car-year">2018</p>
                     </div>
-                    <div>
-                        <button></button>
+                    <div class="delete-car">
+                        <button id="delete-car">Excluir carro</button>
                     </div>
+                </article>
+                <div class="my-cars__add-button">
+                <button id="add-car">Adicionar carro</button>
                 </div>
             </section>
-        </main>
-        <footer>
-            <div>
-                <img src="img/turingwash-logo.svg" alt="Logomarca TuringWash" >
-            </div>
-            <div>
-                <h1>Sobre</h1>
-                <h1>FAQ</h1>
-                <h1>Contato</h1>
-                <h1>Termos de uso</h1>
-            </div>
-            <div>
-                <link>
-                <p></p>
-            </div>
-        </footer>     
+        </main>    
     </body>
 </html>
