@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>TuringWash</title>
+        <link rel="icon" href="https://ituring.com.br/favicon.ico">
+        <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+        <script>
+
+        </script>
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 0px;
+                background-color: var(--fundo);
+            }
+
+            .header{
+                background-color: #BCF7FF;
+                font-weight: bold;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .header__img{
+                align-items: center;
+                margin: 0px 0px 10px 15px
+            }
+
+            #logo-turing-wash{
+                height: 50px;
+            }
+
+            .header__links{
+                width: 60%;
+                font-size: 18px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 60px;
+                justify-content: flex-end;
+            }
+
+            #exit-button{
+                font-size: 18px;
+                font-weight: bold;
+                background-color: #8FF2FF;
+                border: none;
+                border-radius: 5px;
+                width: auto;
+                height: 30px;
+                margin-right: 20px;
+            }
+
+            main{
+                background-color: #EAF7FF;
+                padding: 20px;
+            }
+
+            #page-title{
+                font-size: 24px;
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+
+            .wash-data{
+                background-color: white;
+                width: 70%;
+                margin-left: 15%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 80px;
+                border-radius: 8px;
+                margin-bottom: 20px
+            }
+
+            .name{
+                font-weight: bold;
+                margin-top: 3px;
+            }
+
+            .wash-data__past{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                font-size: 15px;
+            }
+
+            .price{
+                background-color: #DCFCFE;
+                display: flex;
+                justify-content: flex-end;
+                font-weight: bold;
+                font-size: larger;
+                padding: 5px 5px;
+                width: auto;
+                border-top-right-radius: 8px;
+                font-size: 15px;
+            }
+
+            .name, .date, .fixed-text{
+                margin: 5px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__img">
+              <img src="img/turingwash-logo.svg" alt="Logomarca TuringWash" id="logo-turing-wash">
+            </div>
+            <div class="header__links">
+              <div>Meus carros</div>
+              <div>Minhas lavagens</div>
+              <button id="exit-button" >Sair</button>
+            </div>
+        </header>
+        <main>
+            <div id="page-title">
+                <h1>Minhas lavagens</h1>
+            </div>
+            <section>
+                <article class="wash-data">
+                    <div>
+                        <h1 class="fixed-text">Lavador</h1>
+                        <h2 class="name">Joana Santos</h2>
+                    </div>
+                    <div>
+                        <h1 class="fixed-text">Carro</h1>
+                        <h2 class="name">Nissan Kicks (2018)</h2>
+                    </div>
+                    <div class="wash-data__past">
+                        <div class="price">R$ 75</div>
+                        <div class="date">1 de Agosto de 2022</div>
+                    </div>
+                </article>
+                <article class="wash-data">
+                    <div>
+                        <h1 class="fixed-text">Lavador</h1>
+                        <h2 class="name">Joana Santos</h2>
+                    </div>
+                    <div>
+                        <h1 class="fixed-text">Carro</h1>
+                        <h2 class="name">Nissan Kicks (2018)</h2>
+                    </div>
+                    <div class="wash-data__past">
+                        <div class="price">R$ 75</div>
+                        <div class="date">3 de Agosto de 2022</div>
+                    </div>
+                </article>
+                <article class="wash-data">
+                    <div>
+                        <h1 class="fixed-text">Lavador</h1>
+                        <h2 class="name">Matheus Oliveira</h2>
+                    </div>
+                    <div>
+                        <h1 class="fixed-text">Carro</h1>
+                        <h2 class="name">Chevrolet Onix (2015)</h2>
+                    </div>
+                    <div class="wash-data__past">
+                        <div class="price">R$ 60</div>
+                        <div class="date">29 de Maio de 2022</div>
+                    </div>
+                </article>
+                <article class="wash-data">
+                    <div>
+                        <h1 class="fixed-text">Lavador</h1>
+                        <h2 class="name">Joana Santos</h2>
+                    </div>
+                    <div>
+                        <h1 class="fixed-text">Carro</h1>
+                        <h2 class="name">Nissan Kicks (2018)</h2>
+                    </div>
+                    <div class="wash-data__past">
+                        <div class="price">R$ 75</div>
+                        <div class="date">20 de Abril de 2022</div>
+                    </div>
+                </article>
+
+            </section>
+        </main>    
+    </body>
+</html>
