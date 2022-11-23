@@ -53,37 +53,48 @@
 
             main{
                 background-color: #EAF7FF;
+                padding: 20px;
             }
 
             #page-title{
-                font-size: 30px;
+                font-size: 24px;
                 font-weight: bold;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin-bottom: 40px;
             }
 
             .my-cars__car{
                 background-color: white;
-                width: 60%;
-                margin-left: 20%;
+                width: 70%;
+                margin-left: 15%;
                 display: flex;
                 justify-content: space-between;
-                height: 100px;
+                height: 80px;
                 border-radius: 8px;
+                padding: 10px 10px 10px 10px;
+                margin-bottom: 20px
             }
 
-            #car-name{
+            .car-name{
                 font-weight: bold;
+                margin-bottom: 3px;
             }
 
-            #delete-car{
-                font-size: 16px;
+            .delete-car{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            .delete-car__button{
+                font-size: 14px;
                 background-color: #FF9B9B;
                 border: none;
                 font-weight: bold;
-                border-radius: 5px;
-                width: 120px;
+                border-radius: 8px;
+                width: 130px;
                 height: 30px;
             }
             
@@ -123,11 +134,20 @@
             <section class="my-cars">
                 <article class="my-cars__car">
                     <div>
-                        <h1 id="car-name">Nissan Kicks</h1>
-                        <p id="car-year">2018</p>
+                        <h1 class="car-name">Nissan Kicks</h1>
+                        <p class="car-year">2018</p>
                     </div>
                     <div class="delete-car">
-                        <button id="delete-car">Excluir carro</button>
+                        <button class="delete-car__button">Excluir carro</button>
+                    </div>
+                </article>
+                <article class="my-cars__car">
+                    <div>
+                        <h1 class="car-name">Chevrolet Onix</h1>
+                        <p class="car-year">2015</p>
+                    </div>
+                    <div class="delete-car">
+                        <button class="delete-car__button">Excluir carro</button>
                     </div>
                 </article>
                 <div class="my-cars__add-button">
