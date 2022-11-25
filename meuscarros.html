@@ -1,163 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>TuringWash</title>
-        <link rel="icon" href="https://ituring.com.br/favicon.ico">
-        <link href="css/reset.css" rel="stylesheet" type="text/css"/>
-        <script>
 
-        </script>
-        <style>
-            body {
-                font-family: sans-serif;
-                margin: 0px;
-                background-color: var(--fundo);
-            }
+<head>
+    <title>TuringWash</title>
+    <link rel="icon" href="https://ituring.com.br/favicon.ico">
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/meuscarros.css" rel="stylesheet" type="text/css" />
+</head>
 
-            .header{
-                background-color: #BCF7FF;
-                font-weight: bold;
-                display: flex;
-                justify-content: space-between;
-            }
-            
-            .header__img{
-                align-items: center;
-                margin: 0px 0px 10px 15px
-            }
-
-            #logo-turing-wash{
-                height: 50px;
-            }
-
-            .header__links{
-                width: 60%;
-                font-size: 18px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 60px;
-                justify-content: flex-end;
-            }
-
-            #exit-button{
-                font-size: 18px;
-                font-weight: bold;
-                background-color: #8FF2FF;
-                border: none;
-                border-radius: 5px;
-                width: auto;
-                height: 30px;
-                margin-right: 20px;
-            }
-
-            main{
-                background-color: #EAF7FF;
-                padding: 20px;
-            }
-
-            #page-title{
-                font-size: 24px;
-                font-weight: bold;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 40px;
-            }
-
-            .my-cars{
-                background-color: white;
-                width: 70%;
-                margin-left: 15%;
-                display: flex;
-                justify-content: space-between;
-                height: 80px;
-                border-radius: 8px;
-                margin-bottom: 20px
-            }
-
-            .car-data{
-                margin: 10px 0 0 10px
-            }
-
-            .car-name{
-                font-weight: bold;
-                margin-bottom: 3px;
-            }
-
-            .delete-car{
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                margin: 0 10px 10px 0
-            }
-
-            .delete-car__button{
-                font-size: 14px;
-                background-color: #FF9B9B;
-                border: none;
-                font-weight: bold;
-                border-radius: 8px;
-                width: 130px;
-                height: 30px;
-            }
-            
-            .my-cars__add-button{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            #add-car{
-                font-size: 16px;
-                background-color: #8FF2FF;
-                border: none;
-                border-radius: 5px;
-                width: auto;
-                height: 30px;
-            }
-
-
-        </style>
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__img">
-              <img src="img/turingwash-logo.svg" alt="Logomarca TuringWash" id="logo-turing-wash">
-            </div>
-            <div class="header__links">
-              <div>Meus carros</div>
-              <div>Minhas lavagens</div>
-              <button id="exit-button" >Sair</button>
-            </div>
-        </header>
-        <main>
-            <div id="page-title">
-                <h1>Meus carros</h1>
-            </div>
-            <section>
-                <article class="my-cars">
-                    <div class="car-data">
-                        <h1 class="car-name">Nissan Kicks</h1>
-                        <p class="car-year">2018</p>
-                    </div>
-                    <div class="delete-car">
-                        <button class="delete-car__button">Excluir carro</button>
-                    </div>
-                </article>
-                <article class="my-cars">
-                    <div class="car-data">
-                        <h1 class="car-name">Chevrolet Onix</h1>
-                        <p class="car-year">2015</p>
-                    </div>
-                    <div class="delete-car">
-                        <button class="delete-car__button">Excluir carro</button>
-                    </div>
-                </article>
-                <div class="my-cars__add-button">
-                <button id="add-car">Adicionar carro</button>
+<body>
+    <header class="header">
+        <div class="header__img">
+            <img src="img/turingwash-logo.svg" alt="Logomarca TuringWash" id="logo-turing-wash">
+        </div>
+        <div class="header__links">
+            <div>Meus carros</div>
+            <div>Minhas lavagens</div>
+            <button id="exit-button">Sair</button>
+        </div>
+    </header>
+    <main>
+        <div id="page-title">
+            <h1>Meus carros</h1>
+        </div>
+        <section>
+            <article class="my-cars">
+                <div class="car-data">
+                    <h1 class="car-name">Nissan Kicks</h1>
+                    <p class="car-year">2018</p>
                 </div>
-            </section>
-        </main>    
-    </body>
+                <div class="delete-car">
+                    <button class="delete-car__button">Excluir carro</button>
+                </div>
+            </article>
+            <article class="my-cars">
+                <div class="car-data">
+                    <h1 class="car-name">Chevrolet Onix</h1>
+                    <p class="car-year">2015</p>
+                </div>
+                <div class="delete-car">
+                    <button class="delete-car__button">Excluir carro</button>
+                </div>
+            </article>
+            <div class="my-cars__add-button">
+                <button id="add-car">Adicionar carro</button>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
