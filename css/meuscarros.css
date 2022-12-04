@@ -1,17 +1,3 @@
-main{
-    background-color: #EAF7FF;
-    padding: 20px;
-}
-
-#page-title{
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
 .my-cars{
     background-color: white;
     width: 70%;
@@ -62,4 +48,12 @@ main{
     border-radius: 5px;
     width: auto;
     height: 30px;
+}
+
+@media screen and (max-width: 768px){
+
+    .my-cars{
+        margin: 0 0 20px 0;
+        width: auto;
+    }
 }

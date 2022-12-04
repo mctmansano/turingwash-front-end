@@ -4,21 +4,37 @@
 <head>
     <title>TuringWash</title>
     <link rel="icon" href="https://ituring.com.br/favicon.ico">
-    <link href="css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
     <link href="css/meuscarros.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <header class="header">
-        <div class="header__img">
+        <!-- <div class="header__img"
             <img src="img/turingwash-logo.svg" alt="Logomarca TuringWash" id="logo-turing-wash">
         </div>
         <div class="header__links">
             <div>Meus carros</div>
             <div>Minhas lavagens</div>
-            <button id="exit-button">Sair</button>
-        </div>
+            <a href="#" title="Logar e deslogar" id="exit-button">Sair</a>
+        </div>-->
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input class="checkbox" type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__img">
+                <img src="img/turingwash-logo.svg" alt="Logomarca TuringWash" id="logo-turing-wash">
+            </div>
+            <ul id="menu">
+                <a href="#"><li>Meus carros</li></a>
+                <a href="#"><li>Minhas Lavagens</li></a>
+                <a href="" target="_blank" id="exit-button"><li>Sair</li></a>
+            </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <div id="page-title">
@@ -48,6 +64,24 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer__img">
+            <img src="img/turingwash-logo.svg" alt="Logomarca TuringWash" id="footer__img-logo">
+        </div>
+        <div id="footer__menu">
+            <h1>Sobre</h1>
+            <h1>FAQ</h1>
+            <h1>Contato</h1>
+            <h1>Termos de uso</h1>
+        </div>
+        <div id="instagram-link">
+            <div id="instagram">
+                <div><img src="img/logo-instagram.webp" alt="Logomarca Instagram" id="logo-instagram"></div>
+                <a href="#" id="ituringwash-insta">@ituringwash</a>
+            </div>
+            <h1>2022.TuringWash. Todos os direitos reservados</h1>
+        </div>
+    </footer>
 </body>
 
 </html>
